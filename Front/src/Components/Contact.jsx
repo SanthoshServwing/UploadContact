@@ -24,7 +24,7 @@ const Contact = () => {
   const handleContactSubmit = async (e) => {
     e.preventDefault()
     try {
-      const contactResponse = await axios.post('http://127.0.0.1:8000/api/contact/', contact)
+      const contactResponse = await axios.post('https://main.d23p3u4f8o8hii.amplifyapp.com/api/contact/', contact)
       console.log(contactResponse)
       alert('contact Form submitted')
     } catch (error) {
